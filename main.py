@@ -10,7 +10,6 @@ class BlueTracker:
         self.root = root
         self.root.title("Blue Tracker")
 
-        # Initialize camera with error handling
         self.cap = cv2.VideoCapture(0)
         if not self.cap.isOpened():
             raise RuntimeError("Could not open camera")
